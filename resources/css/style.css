@@ -1,0 +1,180 @@
+/* Stlyed by Brendon Carrasquillo (12/12/2017) */
+
+/* General Page Styling */
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: helvetica;
+  background-color: white;
+}
+
+/* Banner/Navigation Styling */
+.main-banner {
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31rem;
+  padding-top: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: cadetblue;
+  width: 960px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.logo img {
+  height: 1.5rem;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.logo h4 {
+  color: white;
+  font-size: 1rem;
+}
+
+nav {
+  display: flex;
+}
+
+nav span {
+  align-items: center;
+  color: white;
+  margin-right: 2rem;
+  padding: 1rem 0rem;
+}
+
+.slogan {
+  display: flex;
+  justify-content: flex-end;
+  width: 960px;
+  margin:auto;
+}
+
+.slogan h1 {
+  background-color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+/* Service List Styling */
+.service-list {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 8rem;
+  margin: 3rem auto;
+
+}
+
+.exams,
+.custom-fittings,
+.delivery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: visible;
+  width: 5rem;
+  height: 8rem;
+  margin: 0 3rem;
+}
+
+.exams img {
+  width: 3.5rem;
+  align-items: center;
+}
+
+.exams h3,
+.custom-fittings h3,
+.delivery h3 {
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+}
+
+.custom-fittings img,
+.delivery img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+}
+
+/* Philosophy & Appointments Styling */
+.philo-appt {
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+.philosophy {
+  margin-right: 5%;
+}
+
+.philosophy,
+.appointments {
+  display: block;
+  width: 35%;
+}
+
+.philo-appt h3 {
+  background-color: cadetblue;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  padding: .5rem 1.25rem;
+  margin-bottom: 1rem;
+  width: 10rem;
+}
+
+.philo-appt p {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: lighter;
+}
+
+/* Footer Styling */
+footer {
+  max-width: 960px;
+  margin: auto;
+  background-color: azure;
+  padding: 4rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  margin-right: 1rem;
+  height: 1.5rem;
+}
+
+/* Styling for TABLET size screens */
+@media only screen and (max-width: 960px) {
+  .main-banner  {
+    padding-top: 0rem;
+  }
+
+  header {
+    width: auto;
+  }
+}
