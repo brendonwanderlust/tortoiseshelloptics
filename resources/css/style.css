@@ -53,6 +53,10 @@ nav span {
   padding: 1rem 0rem;
 }
 
+#menu {
+  display: none;
+}
+
 .slogan {
   display: flex;
   justify-content: flex-end;
@@ -77,7 +81,6 @@ nav span {
   align-items: stretch;
   height: 8rem;
   margin: 3rem auto;
-
 }
 
 .exams,
@@ -168,13 +171,189 @@ footer {
   height: 1.5rem;
 }
 
+#footertxt {
+  display: block;
+}
+
+
+
+
+
 /* Styling for TABLET size screens */
 @media only screen and (max-width: 960px) {
+  /* Banner/Navigation Styling. Styling added includes: */
+  /*      1. deleted padding at top of main banner container */
+  /*      2. Directed the header to span the full width of the screen */
+  /*      3. Adjusted the position of the slogan container */
+  /*      4. Reduced size of text within the slogan container */
+
   .main-banner  {
     padding-top: 0rem;
+    height: 22rem;
   }
 
   header {
     width: auto;
   }
+
+  .slogan h1 {
+    font-size: 1.33rem;
+    padding: .75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+}
+
+
+
+
+
+/* Styling for MOBILE PHONE size screens */
+@media only screen and (max-width: 470px) {
+  /* Banner/Navigation Styling. Styling added includes: */
+  /*      1. reduced banner height */
+  /*      2. Directed the nav list to be shortened to just "menu" */
+  /*      3. Directed slogan container to span the width of the container */
+  /*      4. Reduced size of text withing the slogan container */
+  /*      5. Increased margin between top of slogan container and bottom of nav */
+  /*      6. Directed logo text to not display. */
+  .main-banner  {
+    padding-top: 0rem;
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  #logotxt,
+  #services,
+  #products,
+  #contact {
+    display: none;
+  }
+
+  header {
+    width: auto;
+  }
+
+  .slogan {
+    display: block;
+    width: auto;
+    margin-right: 0rem;
+  }
+
+  .slogan h1 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    margin-top: 9rem;
+    margin-right: auto;
+  }
+
+  /* Service List Styling. Styling added includes: */
+  /*      1. Increased top and bottom margin to 3.77rem */
+  /*      2. Directed items to flex as a column */
+  /*      3. Added margin of 1.54rem btw bottom of headers and top of images */
+  .service-list {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+    margin: 3.77rem auto;
+  }
+
+  .exams,
+  .custom-fittings,
+  .delivery {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: visible;
+    width: 5rem;
+    height: auto;
+  }
+
+  .custom-fittings img,
+  .delivery img {
+    margin-top: 1.54rem;
+  }
+
+  .exams h3,
+  .custom-fittings h3,
+  .delivery h3 {
+    margin-top: 1.25rem;
+    font-size: .77rem;
+  }
+
+  /* Philosophy & Appointments Styling. Stlying includes: */
+  /*      1. Made headers and <p> elements full width of screen */
+  /*      2. Directed items to flex as a column */
+  /*      3. Decreased font size of paragragh elements */
+  /*      4. Added margin of 4rem btw philosophy and appointment containers */
+  .philo-appt {
+    display: flex;
+    flex-direction: column;
+    max-width: none;
+    margin: auto;
+    margin-bottom: auto;
+  }
+
+  .philosophy {
+    margin-right: auto;
+  }
+
+  .philosophy,
+  .appointments {
+    display: block;
+    width: auto;
+    margin-bottom: 4rem;
+  }
+
+  .philo-appt h3 {
+    background-color: cadetblue;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    padding: auto;
+    margin-bottom: 1rem;
+    width: auto;
+  }
+
+  .philo-appt p {
+    font-size: .77rem;
+    line-height: 150%;
+    font-weight: lighter;
+    margin-left: .25rem;
+  }
+
+  /* Footer Styling. Styling includes: */
+  /*      1. made footer 100% of page bottom */
+  /*      2. removed logo text */
+  /*      3. centered image vertically and horizontally in container */
+  footer {
+    max-width: auto;
+    margin: auto;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    margin: auto;
+    height: 1.5rem;
+  }
+
+  #footertxt {
+    display: none;
+  }
+
 }
